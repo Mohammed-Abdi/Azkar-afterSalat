@@ -1,0 +1,82 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  aspect-ratio: 3/4;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: var(--white-clr);
+  box-shadow: 0.1px 0.2px 5px var(--border-clr);
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.counter {
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  bottom: 4%;
+  width: 90%;
+  position: absolute;
+}
+
+button {
+  bottom: 4%;
+  padding: 0.5rem 2.75rem;
+  border: 2px solid var(--black-color);
+  font-family: inherit;
+  background: transparent;
+  font-weight: 500;
+  border-radius: 7px;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.increment {
+  background: var(--black-color);
+  color: var(--white-clr);
+}
+
+.max {
+  display: none;
+  position: absolute;
+  bottom: 20%;
+  font-weight: 600;
+}
+
+.max.show {
+  display: inline;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.zikr {
+  transform: scale(0);
+  font-weight: 600;
+  position: absolute;
+  top: 10%;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.zikr.show {
+  transform: scale(1);
+}
+
+.icon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 1.25rem;
+  aspect-ratio: 1/1;
+}

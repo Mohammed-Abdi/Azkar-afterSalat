@@ -1,0 +1,12 @@
+:root {
+  --white-clr: #fff;
+  --smokeyWhite: #f5f5f7;
+  --border-clr: #b0b0b0;
+  --black-color: #000;
+  --fadeBlack: #393939;
+  --fadedBlack: #555858;
+  /* sizes */
+  --gap-small: 0.625rem;
+  --gap: 1.25rem;
+  --padding: 1.25rem;
+}

@@ -1,0 +1,149 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 4rem;
+  background: var(--white-clr);
+  padding-inline: 0.625rem;
+  z-index: 99;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menuAndLogo,
+.moreAndUser {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.logo .logoIcon {
+  width: 1.95rem;
+  aspect-ratio: 1/1;
+}
+
+.menuAndLogo .logoTxt {
+  font-size: 1.25rem;
+}
+
+.logoTxt {
+  font-weight: 600;
+}
+
+.user,
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+  color: var(--fadedBlack);
+  cursor: pointer;
+}
+
+.user {
+  font-size: 2rem;
+}
+
+.menu:hover,
+.user:hover {
+  background: var(--smokeyWhite);
+}
+
+.colored {
+  color: var(--fadedBlack);
+}
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  width: 300px;
+  position: absolute;
+  background: var(--white-clr);
+  left: 0;
+  top: 0;
+  box-shadow: 0.5px 1px 5px var(--border-clr);
+  height: 100vh;
+  padding: 1.25rem;
+  transform: translateX(-500px);
+  transition: all 0.3s ease-in-out;
+}
+
+.sideNav.show {
+  transform: translateX(0);
+}
+
+.sideNav .img {
+  width: 0.5rem;
+  aspect-ratio: 1/1;
+}
+
+.sideNav hr {
+  opacity: 0.3;
+}
+
+.sideNavMiddle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-block: 0.5rem;
+}
+
+.sideNavMiddle span {
+  font-size: 1rem;
+}
+
+.sideNavMiddle .logoTxt {
+  font-size: 0.875rem;
+}
+
+.sideNav a {
+  transition: all 0.3s ease-in-out;
+  padding-block: 0.5rem;
+  border-radius: 0 22px 22px 0;
+}
+
+.sideNav a:hover {
+  background: var(--smokeyWhite);
+}
+
+.mainLogo {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--fadeBlack);
+}
+
+.mainLogo img {
+  width: 2.7rem;
+  aspect-ratio: 1/1;
+  transform: translateY(0.2rem);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-inline: 0;
+  }
+}
